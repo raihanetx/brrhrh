@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One Example</title>
+    <style>
+        /* CSS starts here */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        /* CSS ends here */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hello from All-in-One!</h1>
+        <p id="myParagraph">This is some initial text.</p>
+        <button id="myButton">Click Me!</button>
+    </div>
+
+    <script>
+        /* JavaScript starts here */
+        document.addEventListener('DOMContentLoaded', function() {
+            const button = document.getElementById('myButton');
+            const paragraph = document.getElementById('myParagraph');
+
+            button.addEventListener('click', function() {
+                paragraph.textContent = "You clicked the button! Text has changed.";
+                paragraph.style.color = "#e63946"; // Optional: change color as well
+            });
+        });
+        /* JavaScript ends here */
+    </script>
+
+</body>
+</html>
